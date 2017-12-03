@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#title {
+    margin-top: 30px;
+    margin-left: 40px;
+}
+#container {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 245px;
+    height: 275px;
+    border: 1px solid #666;
+
+    .lineBox {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+
+        .line {
+            position: absolute;
+            list-style: none;
+            width: 2px;
+            height: 234px;
+            background: orange;
+        }
+
+        .row {
+            width: 225px;
+            height: 2px;
+        }
+        .rowTop {
+            top: 78px;
+        }
+        .rowBottom {
+            top: 156px;
+        }
+
+        .colLeft {
+            left:  71px;
+        }
+        .colRight {
+            left:  146px;
+        }
+    }
+
+    table {
+        margin-top: 10px;
+        width: 100%;
+        height: 225px;
+        border-collapse: collapse;
+
+        tr > td {
+            width: 25px;
+            height: 25px;
+            border: 1px solid #666;
+            background: #F1F1F1;
+            text-align: center;
+            line-height: 25px;
+        }
+        .empty {
+            background: #FFF;
+        }
+    }
+
+    .control{
+        position: absolute;
+        bottom: 5px;
+        width: 225px;
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+
+            li {
+                list-style: none;
+                cursor: pointer;
+            }
+        }
+    } 
+}
+#popPanel {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #FFF;
+    z-index: 100;
+
+    table {
+        border-collapse: collapse;
+
+        tr > td {
+            width: 25px;
+            height: 25px;
+            border: 1px solid #000;
+            text-align: center;
+            line-height: 25px;
+            cursor: pointer;
+        }
+    }
+}
+
+.red {
+    background: rgb(255, 81, 0) !important;
+}
+.green {
+    background: rgb(0, 255, 170) !important;
+}
+.wrong {
+    background: rgb(229, 255, 0) !important;
+}

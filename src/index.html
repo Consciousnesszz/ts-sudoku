@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="title">
+        <label>难度：</label>
+        <select id="levelSel">
+            <option value="3">3</option>
+            <option value="5">5</option>
+            <option value="7">7</option>
+        </select>
+    </div>
+    <div id="container">
+        <ul class="lineBox">
+            <li class="line row rowTop"></li>
+            <li class="line row rowBottom"></li>
+            <li class="line col colLeft"></li>
+            <li class="line col colRight"></li>
+        </ul>
+
+        <table>
+            <tbody>
+                
+            </tbody>
+        </table>
+        <div class="control">
+            <ul>
+                <li id="check">检查</li>
+                <li id="clear">清理</li>
+                <li id="reset">重置</li>
+                <li id="rebuild">重建</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="popPanel">
+        <table>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td class="red"></td>
+                    <td class="white"></td>
+                    <td class="green"></td>
+                </tr>
+            </tbody>
+            
+        </table>
+    </div>
+
+</body>
+</html>
